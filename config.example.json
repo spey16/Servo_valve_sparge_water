@@ -1,4 +1,8 @@
 {
+    "wifi": {
+        "YOUR_SSID": "YOUR_PASSWORD",
+        "YOUR_BACKUP_SSID": "YOUR_BACKUP_PASSWORD"
+    },
     "mqtt": {
         "broker": "YOUR_MQTT_BROKER_IP",
         "port": 11221,
