@@ -1,0 +1,21 @@
+{
+    "mqtt": {
+        "broker": "YOUR_MQTT_BROKER_IP",
+        "port": 11221,
+        "topics": {
+            "temperature": "hlt/out/temperature",
+            "valve_position": "valve/position",
+            "valve_control": "valve/sparge/gain"
+        }
+    },
+    "temperature": {
+        "target": 78.0,
+        "hot_water": 92.0,
+        "cold_water": 15.0
+    },
+    "valve": {
+        "pin": 27,
+        "backlash": 15,
+        "max_adjustment": 2
+    }
+}
