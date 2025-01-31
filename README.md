@@ -9,6 +9,30 @@ A MicroPython-based temperature control system that uses a servo-operated valve 
 3. **Servo Control** (`servo.py`): Library for controlling the servo motor
 4. **WiFi Manager** (`Wifi_Manager.py`): Handles WiFi connection for ESP32
 
+## TODO: Autonomous Temperature Control
+
+Planned updates to make the unit fully autonomous:
+
+1. **Hardware Updates**
+   - Add DS18B20 waterproof temperature sensor
+   - Add power supply connection
+   - Make a waterproof housing for 1/4" valve and servo motor 
+
+2. **Software Updates**
+   - Create temperature sensor module for DS18B20
+   - Update main.py to read temperature directly from sensor
+   - Simplify MQTT communication:
+     - Remove temperature input topic
+     - Keep target temperature control topic
+     - Keep valve position output topic (for monitoring)
+   - Add default target temperature in config
+   - Add fallback mode if MQTT is unavailable
+
+3. **Configuration Updates**
+   - Add temperature sensor pin to config.json
+   - Add sensor reading interval to config.json
+   - Add calibration parameters for temperature sensor
+
 ## Configuration
 
 The system uses two configuration files:

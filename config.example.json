@@ -5,7 +5,7 @@
     },
     "mqtt": {
         "broker": "YOUR_MQTT_BROKER_IP",
-        "port": 11221,
+        "port": 1883,
         "topics": {
             "temperature": "hlt/out/temperature",
             "valve_position": "valve/position",
